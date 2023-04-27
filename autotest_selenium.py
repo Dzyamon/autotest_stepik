@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import math
 import os
-from faker import Faker
+#from faker import Faker
 
 
 link1 = "http://suninjuly.github.io/simple_form_find_task.html"
@@ -24,11 +24,11 @@ link12 = "http://suninjuly.github.io/alert_accept.html"
 link13 = "http://suninjuly.github.io/redirect_accept.html"
 link14 = "http://suninjuly.github.io/explicit_wait2.html"
 
-browser = webdriver.Chrome()
-browser.get(link14)
+# browser = webdriver.Chrome()
+# browser.get(link14)
 # fake = Faker()
 
-try:
+# try:
     # #link1
     # input1 = browser.find_element(By.TAG_NAME, "input")
     # input1.send_keys("Ivan")
@@ -167,7 +167,19 @@ try:
 # except Exception as error:
 #     print(f'Произошла ошибка, вот её трэйсбэк: {error}')
 
-finally:
-    print(browser.switch_to.alert.text.split(': ')[-1])
-    time.sleep(5)
-    browser.quit()
+# finally:
+#     print(browser.switch_to.alert.text.split(': ')[-1])
+#     time.sleep(5)
+#     browser.quit()
+
+
+## ASSERT
+
+# def test_input_text(expected_result, actual_result):
+#     assert expected_result == actual_result, f"expected {expected_result}, got {actual_result}"
+# test_input_text(10, 10)
+
+# def test_substring(full_string, substring):
+#     assert substring in full_string, f"expected '{substring}' to be substring of '{full_string}'"
+# test_substring('some_text', 'some1')
+
